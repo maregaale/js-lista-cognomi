@@ -6,4 +6,12 @@ var listaCognomi = ["Bianchi", "Rossi", "Duzioni", "Balsano", "Verdi"];
 
 // inserisco il cognome dell'utente nell'array e stampo l'array
 listaCognomi.push(cognomeUtente);
-console.log(listaCognomi);
+
+// stampo la lista ordinata alfabeticamente
+var listaOrdinata = [];
+listaOrdinata = listaCognomi.sort();
+
+
+for (var i = 0; i < listaCognomi.length; i++) {
+  document.getElementById('lista').innerHTML += "<li>" + listaOrdinata[i] + "</li>"
+}

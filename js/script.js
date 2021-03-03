@@ -15,3 +15,6 @@ var listaOrdinata = listaCognomi.sort();
 for (var i = 0; i < listaCognomi.length; i++) {
   document.getElementById('lista').innerHTML += "<li>" + listaOrdinata[i] + "</li>"
 }
+
+// stampo la posizione "umana" della posizione utente
+document.getElementById('pos_utente').innerHTML = "il tuo cognome si trova in " + (listaOrdinata.indexOf(cognomeUtenteCorretto) + 1) + "a posizione nella lista!";

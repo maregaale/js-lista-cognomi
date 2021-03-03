@@ -1,5 +1,7 @@
 // chiedo all'utente il cognome
 var cognomeUtente = prompt("Inserisci il tuo cognome");
+
+// correggo eventuali prime lettere minuscole nell'inserimento da parte dell'utente
 var cognomeUtenteCorretto = cognomeUtente[0].toUpperCase() + cognomeUtente.slice(1);
 
 // creo array con lista cognomi
